@@ -2,7 +2,11 @@ class Bank_Account_System:
     def __init__(self, username, account_number):
         self.username = username
         self.account_number = account_number
+<<<<<<< HEAD
         self.balance = 500.0
+=======
+        self.balance = 0.0
+>>>>>>> origin/main
  
     def deposit(self, amount):
         self.balance += amount
@@ -16,7 +20,11 @@ class Bank_Account_System:
             return "Insufficient Balance"
         else:
             self.balance -= amount
+<<<<<<< HEAD
             return f"Withdraw {amount}. New balance: {self.balance}"
+=======
+            return f"Withdrew {amount}. New balance: {self.balance}"
+>>>>>>> origin/main
  
     def account_details(self):
         return (f"Account Holder: {self.username}\n"
@@ -51,23 +59,40 @@ if __name__ == "__main__":
  
     account1 = Bank_Account_System(username, account_number)
     print(account1.account_details())
+<<<<<<< HEAD
     print(account1.deposit(20000))
     print(account1.withdraw(3000))
+=======
+    print(account1.deposit(10000))
+    print(account1.withdraw(1500))
+>>>>>>> origin/main
     print(account1.show_balance())
  
     savings_username = input("Enter savings account holder name: ")
     savings_account_number = input("Enter savings account number: ")
+<<<<<<< HEAD
     savings = SavingsAccount(savings_username, savings_account_number, 3)
     print(savings.account_details())
     print(savings.deposit(10000))
+=======
+    savings = SavingsAccount(savings_username, savings_account_number, 6)
+    print(savings.account_details())
+    print(savings.deposit(5000))
+>>>>>>> origin/main
     print(savings.apply_interest())
     print(savings.show_balance())
  
     current_username = input("Enter current account holder name: ")
     current_account_number = input("Enter current account number: ")
+<<<<<<< HEAD
     current = CurrentAccount(current_username, current_account_number, 300)
     print(current.account_details())
     print(current.deposit(2000))
+=======
+    current = CurrentAccount(current_username, current_account_number, 200)
+    print(current.account_details())
+    print(current.deposit(1000))
+>>>>>>> origin/main
     print(current.withdraw(1100)) 
     print(current.show_balance())
     print(current.withdraw(300)) 
